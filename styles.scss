@@ -96,3 +96,23 @@ input::placeholder {
     }
   }
 }
+
+.q09 {
+  dt {
+    float: left;
+  }
+  dd {
+    width: 400px;
+    margin: 0 0 16px 100px;
+    border-bottom: 1px dotted;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    &::before {
+      content: "■"
+    }
+  }
+}
