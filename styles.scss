@@ -112,7 +112,20 @@ input::placeholder {
   li {
     list-style: none;
     &::before {
-      content: "■"
+      content: "■";
+    }
+  }
+}
+
+.q10 {
+  .text-wrap {
+    width: 300px;
+    border: 1px solid;
+    padding: 12px;
+    p {
+      text-indent: -1em;
+      padding-left: 1em;
+      word-break: break-all;
     }
   }
 }
