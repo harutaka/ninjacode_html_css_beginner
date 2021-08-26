@@ -129,3 +129,13 @@ input::placeholder {
     }
   }
 }
+
+.q11 {
+  input {
+    font-weight: bold;
+    &::placeholder {
+      font-weight: normal;
+      color: grey;
+    }
+  }
+}
