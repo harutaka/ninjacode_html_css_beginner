@@ -139,3 +139,154 @@ input::placeholder {
     }
   }
 }
+
+.q12 {
+  .text-wrap {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    padding: 12px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 1px;
+    display: inline-block;
+    background: #0e6edf;
+  }
+}
+
+.q13 {
+  img {
+    min-height: 100vh;
+  }
+}
+
+.q14 {
+  li {
+    &:nth-child(odd) {
+      color: red;
+    }
+    &:nth-child(even) {
+      color: green;
+    }
+  }
+  div {
+    span {
+      &:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+    i,
+    p {
+      color: blue;
+    }
+  }
+}
+
+.q15 {
+  .block {
+    overflow: hidden;
+  }
+}
+
+.q16 {
+  p {
+    color: blue !important;
+  }
+}
+
+.q17 {
+  ul {
+    display: inline-block;
+    li {
+      &:first-child {
+        border-top: 1px solid;
+      }
+      &:last-child {
+        border-bottom: 1px solid;
+      }
+      border-top: 1px dotted;
+      list-style: none;
+      padding: 8px 0;
+    }
+  }
+}
+
+.q18 {
+  .logo {
+    filter: blur(6px);
+  }
+}
+
+.q19 {
+  .wrap {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: black;
+    display: inline-block;
+  }
+}
+
+.q22 {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.q23 {
+  .text {
+    margin-bottom: 16px;
+  }
+  .text > span {
+    background-color: yellow;
+    display: inline-block;
+    min-width: 300px;
+  }
+}
+
+.q25 {
+  .img-area {
+    background-color: #000;
+    display: inline-block;
+    img {
+      width: 80%;
+      display: block;
+      margin: auto;
+      transition: 1s;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.q27 {
+  section {
+    width: 1000px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    +section > .box--green {
+      float: right;
+    }
+  }
+  .box {
+    width: 200px;
+    float: left;
+  }
+  .box--red {
+    height: 100px;
+    background-color: red;
+  }
+  .box--blue {
+    height: 200px;
+    background-color: blue;
+  }
+  .box--green {
+    height: 300px;
+    background-color: green;
+  }
+}
