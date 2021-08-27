@@ -269,7 +269,7 @@ input::placeholder {
     width: 1000px;
     margin-bottom: 30px;
     overflow: hidden;
-    +section > .box--green {
+    + section > .box--green {
       float: right;
     }
   }
@@ -290,3 +290,250 @@ input::placeholder {
     background-color: green;
   }
 }
+
+.q29 {
+  ul {
+    li {
+      width: 400px;
+      border: 2px solid lightgray;
+      margin-bottom: 10px;
+      padding: 10px 5px;
+      list-style: none;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.q30 {
+  span::before {
+    content: "";
+    background-image: url(https://ninjacode.work/images/main-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 140px;
+    display: block;
+  }
+}
+
+.q31 {
+  span::after {
+    content: "";
+    background-image: url("https://ninjacode.work/assets/img/shuriken.png");
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 5px;
+    vertical-align: -1px;
+  }
+}
+
+.q32 {
+  display: inline-block;
+  padding: 25px;
+  @mixin sen {
+    display: block;
+    width: 50px;
+    height: 1px;
+    content: "";
+    background-color: black;
+  }
+  &::before {
+    @include sen;
+    transform: rotate(45deg);
+  }
+  &::after {
+    @include sen;
+    transform: rotate(-45deg);
+  }
+}
+
+.q33 {
+  img {
+    width: 100px;
+    height: 65px;
+    object-fit: cover;
+  }
+}
+
+.q34 {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.q35 {
+  h1 {
+    letter-spacing: 5px;
+  }
+}
+
+.q36 {
+  p {
+    line-height: 40px;
+  }
+}
+
+.q38 {
+  p {
+    &:first-of-type {
+      color: red;
+    }
+  }
+}
+
+.q39 {
+  p {
+    text-shadow: 1px 2px 3px #808080;
+  }
+}
+
+.q40 {
+  .box {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+  }
+}
+
+.q41 {
+  ul {
+    li {
+      list-style: none;
+      &:nth-of-type(n + 4) {
+        color: red;
+      }
+    }
+  }
+}
+
+.q43 {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .num01 {
+    order: 2;
+  }
+  .num02 {
+    order: 3;
+  }
+  .num03 {
+    order: 1;
+  }
+}
+
+.q44 {
+  div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow-y: scroll;
+  }
+}
+
+.q45 {
+  input {
+    height: 40px;
+    background-color: lightgray;
+    box-shadow: 0 3px 1px grey inset;
+    padding: 0 40px;
+    &::placeholder {
+      color: black;
+      text-align: center;
+    }
+  }
+}
+
+.q46 {
+  .block {
+    p {
+      width: 200px;
+      max-height: 100px;
+      display: inline-block;
+      overflow: hidden;
+    }
+  }
+}
+
+.q47 {
+  @media all and (max-width: 768px) {
+    p {
+      color: red;
+    }
+  }
+}
+
+.q48 {
+  @media all and (max-width: 1024px) {
+    p {
+      color: green;
+    }
+  }
+  @media all and (max-width: 768px) {
+    p {
+      color: red;
+    }
+  }
+}
+
+.q49 {
+  div {
+    width: 200px;
+    height: 400px;
+    margin: 20px 0 0 150px;
+    border: 2px solid;
+    background-color: red;
+    transform: rotate(-45deg);
+  }
+}
+
+.q50 {
+  p {
+    margin-bottom: 16px;
+    &:nth-of-type(2) {
+      visibility: hidden;
+    }
+  }
+}
+
+.q51 {
+  section {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div {
+    width: 200px;
+    height: 100px;
+    &:first-of-type {
+      background-color: red;
+    }
+    &:nth-of-type(2) {
+      background-color: green;
+    }
+    &:nth-of-type(3) {
+      background-color: yellow;
+    }
+    &:nth-of-type(4) {
+      background-color: blue;
+    }
+  }
+}
+
+ .q52 {
+   p {
+     width: 300px;
+     height: 100px;
+     overflow-y: scroll;
+     scrollbar-color: red yellow;
+   }
+ }
